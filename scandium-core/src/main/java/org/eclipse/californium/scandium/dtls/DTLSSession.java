@@ -110,6 +110,7 @@ public final class DTLSSession implements Destroyable {
 	 * This session's peer's IP address and port.
 	 */
 	private InetSocketAddress peer;
+	private InetSocketAddress router;
 
 	/**
 	 * An arbitrary byte sequence chosen by the server to identify this session.
@@ -1014,6 +1015,26 @@ public final class DTLSSession implements Destroyable {
 
 	public void setPeer(InetSocketAddress peer) {
 		this.peer = peer;
+	}
+
+	/**
+	 * Get router address.
+	 * 
+	 * @return router address. {@code null}, if no router is used.
+	 * @since 2.5
+	 */
+	public InetSocketAddress getRouter() {
+		return router;
+	}
+
+	/**
+	 * Set router address.
+	 * 
+	 * @param router router address
+	 * @since 2.5
+	 */
+	public void setRouter(InetSocketAddress router) {
+		this.router = router;
 	}
 
 	/**
