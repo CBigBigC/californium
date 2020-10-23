@@ -91,6 +91,15 @@
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="ERROR_FILE" />
 	</logger>
+	<logger name="org.eclipse.californium.scandium.DtlsClusterConnector" level="INFO" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="org.eclipse.californium.scandium.DtlsDynClusterConnector" level="INFO" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="org.eclipse.californium.extplugtests.K8sManagementClient" level="INFO" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
 
 	<root level="WARN">
 		<appender-ref ref="STDOUT" />
